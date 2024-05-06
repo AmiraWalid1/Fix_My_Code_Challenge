@@ -2,7 +2,7 @@
 """ Square module. """
 
 
-class square():
+class Square():
     """ Square class. """
     width = 0
     height = 0
@@ -13,21 +13,21 @@ class square():
             setattr(self, key, value)
 
     def area_of_my_square(self):
-        """ Area of the square. """
+        """ Area of the Square. """
         return self.width * self.height
 
     def permiter_of_my_square(self):
-        """ Permiter of the square. """
+        """ Permiter of the Square. """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        """ String representation of square. """
+        """ String representation of Square. """
         return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
-    """ Create instance from square. """
-    s = square(width=12, height=9)
+    """ Create instance from Square. """
+    s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
     print(s.permiter_of_my_square())
